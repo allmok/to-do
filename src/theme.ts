@@ -1,33 +1,23 @@
 import { createTheme } from '@mui/material/styles';
 
-const pastelTheme = createTheme({
+const theme = createTheme({
   palette: {
-    primary: {
-      main: '#a2d2ff',
-    },
-    secondary: {
-      main: '#ffafcc',
-    },
     background: {
-      default: '#fdf7f6',
-      paper: '#ffffff',
+      default: '#6b7b94', 
+      paper: '#a8b5cc',
     },
     text: {
-        primary: '#555555',
-        secondary: '#777777',
-    }
+      primary: '#343a40',
+      secondary: '#495057',
+    },
+    divider: '#6b7b94', 
   },
   typography: {
-    fontFamily: [
-        '-apple-system',
-        'BlinkMacSystemFont',
-        '"Segoe UI"',
-        'Roboto',
-        '"Helvetica Neue"',
-        'Arial',
-        'sans-serif',
-    ].join(','),
-  }
+    fontFamily: 'system-ui, sans-serif',
+    h5: {
+        fontWeight: 600,
+    }
+  },
 });
 
-export default pastelTheme;
+export default theme;
